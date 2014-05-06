@@ -11,7 +11,7 @@
   "main": "./lib/githubot",
   "scripts": {
     "prepublish": "coffee -o lib -c src && cat .gitignore | grep -v '^lib$' > .npmignore",
-    "preinstall": "coffee -o lib -c src && cat .gitignore | grep -v '^lib$' > .npmignore",
+    "postinstall": "coffee -o lib -c src && cat .gitignore | grep -v '^lib$' > .npmignore",
     "test": "make test"
   },
   "engines": {
