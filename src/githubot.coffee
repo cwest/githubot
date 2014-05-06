@@ -38,6 +38,7 @@ class Github
       url = "#{url_api_base}#{url}"
 
     client_options = rejectUnauthorized: !@_opt "selfSignedCert"
+    @logger.debug client_options
 
     req = http.create(url, client_options).header("Accept", "application/vnd.github.#{@_opt "apiVersion"}+json")
     req = req.header("User-Agent", "GitHubot/#{version}")
