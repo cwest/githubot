@@ -17,7 +17,7 @@
     "node": ">=0.6.0"
   },
   "dependencies": {
-    "scoped-http-client": ">= 0.9.8",
+    "scoped-http-client": "git://github.com/cwest/node-scoped-http-client.git#self-signed-cert",
     "async": "0.2.x"
   },
   "devDependencies": {
